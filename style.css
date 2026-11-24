@@ -118,7 +118,7 @@ section.wrap{padding-block:32px}
 @media(min-width:1000px){.bcards{grid-template-columns:repeat(3,1fr)}.page-careers .cards{grid-template-columns:repeat(4,1fr)}}
 
 /* about page: history pair, founder feature, split section */
-.page-about .about-history,.page-about .founder,.page-about .split{column-span:all}
+.page-about .about-history,.page-about .founder,.page-about .dev-split{column-span:all}
 .pair{display:flex;gap:20px;justify-content:center;align-items:center;margin:24px 0}
 .pair img{height:300px;width:auto;max-width:calc(50% - 10px);object-fit:contain;border-radius:12px}
 .pic.small img{max-width:220px;border-radius:0}
@@ -126,9 +126,9 @@ section.wrap{padding-block:32px}
 .founder-photo img{border-radius:12px;width:100%;aspect-ratio:4/3;object-fit:cover}
 .founder-text h2{margin:.1em 0 .4em}.founder .kicker{margin:0;text-transform:uppercase;letter-spacing:.12em;font-size:13px;font-weight:700;color:var(--muted)}
 .founder-statue{grid-column:1/-1;margin:8px 0 0}.founder-statue img{border-radius:12px;max-width:520px;margin-inline:auto}
-.split{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:start;margin:24px 0}
+.dev-split{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:start;margin:24px 0}
 .split-pic img{border-radius:12px;width:100%;max-width:420px;margin-left:auto}
-@media(max-width:800px){.founder,.split{grid-template-columns:1fr}.pair img{height:220px}.split-pic img{margin-inline:auto}}
+@media(max-width:800px){.founder,.dev-split{grid-template-columns:1fr}.pair img{height:220px}.split-pic img{margin-inline:auto}}
 /* careers benefit icons (replaced AI images) */
 .bicon{display:flex;align-items:center;justify-content:center;width:64px;height:64px;margin:20px 0 0 18px;border-radius:50%;background:var(--navy);color:#fff}
 .bcard{overflow:visible}
@@ -137,3 +137,27 @@ section.wrap{padding-block:32px}
 @media(max-width:800px){.facts{grid-template-columns:1fr}}
 .facts{align-items:start}
 .vid.portrait{max-width:340px;aspect-ratio:9/16;margin-inline:auto}.vid{aspect-ratio:16/9}.vid.portrait{aspect-ratio:9/16}
+
+.pair img{height:300px;width:auto;max-width:calc(50% - 10px)}
+.fact .pic.seal img{max-width:190px;margin-inline:auto}
+.founder-statue img{max-width:none;width:100%}
+.page-about .team.sons{grid-template-columns:repeat(3,1fr);margin-bottom:0}
+.page-about .team.sons+.team{margin-top:20px}
+@media(max-width:600px){.page-about .team.sons{grid-template-columns:repeat(2,1fr)}.page-about .team{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1500px){.page-news .cards{grid-template-columns:repeat(5,1fr)}}
+
+.career-top.first>div:last-child{position:sticky;top:96px}
+.career-top.first .vid,.career-top.second .vid{margin-block:0}
+.career-top.second>div:last-child{display:flex;justify-content:center}
+.tuit-in{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center;margin-bottom:28px;padding:20px;background:#f4f6fb;border-radius:14px}
+.tuit-in img{max-width:150px}
+@media(max-width:900px){.career-top.first>div:last-child{position:static}.tuit-in{grid-template-columns:1fr}.pair img{height:220px}}
+
+/* v3: centered home history, horizontal pair, glance fills its card */
+.split{margin-inline:auto}
+.split-t{text-align:center}.split-t .btn{margin-right:0}
+.pair{flex-wrap:nowrap}.pair img{min-width:0;flex:0 1 auto}
+.facts{align-items:stretch}
+.fact{display:flex;flex-direction:column}
+.fact .pic.seal{margin:auto;padding-block:12px}.fact .pic.seal img{max-width:230px}
+.fact .pic.small{margin:auto 0}
