@@ -19,3 +19,5 @@
     setInterval(function () { s[i].classList.remove('on'); i = (i + 1) % s.length; s[i].classList.add('on'); }, 5000);
   }
 })();
+
+window.addEventListener("load",function(){setTimeout(function(){document.querySelectorAll(".slide img[data-src]").forEach(function(i){i.src=i.dataset.src;i.removeAttribute("data-src")})},2500)});
