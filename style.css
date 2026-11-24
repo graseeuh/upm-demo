@@ -181,3 +181,5 @@ section.wrap{padding-block:32px}
 
 .facts .fact:nth-child(4){display:grid;grid-template-columns:1fr 150px;gap:4px 16px;align-items:center}
 .facts .fact:nth-child(4) h2{grid-column:1/-1}.facts .fact:nth-child(4) .pic{margin:0}.facts .fact:nth-child(4) .pic img{max-width:150px}
+
+.career-top.first{grid-template-columns:1fr 1fr}.vid-cta{margin:16px 0 0;text-align:center}
